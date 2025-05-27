@@ -1,0 +1,15 @@
+.container-navbar{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    gap: 30px;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
