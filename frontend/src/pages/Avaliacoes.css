@@ -1,27 +1,27 @@
-.container-home{
+.container-avaliacoes{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-    .header-home{
+    .header-avaliacoes{
         display: flex;
         height: 60px;
         width: 100vw;
-        background-color: darkcyan;
+        background-color: rgb(139, 0, 93);
     }
-        .header-logo{
+        .header-logo-avaliacoes{
             display: flex;
             justify-content: start;
             align-items: center;
             padding-left: 20px;
             height: 100%;
             width: 50%;
-            background-color: rgb(75, 69, 69);
+            background-color: whitesmoke;
         }
         
-        .header-social-midia{
+        .header-social-midia-avaliacoes{
             display: flex;
             justify-content: end;
             align-items: center;
@@ -32,7 +32,7 @@
             background-color: transparent;
 
         }
-            .header-midia-button{
+            .header-midia-button-avaliacoes{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -43,12 +43,11 @@
                 background-color: whitesmoke;
                 cursor: pointer;
             }
-                .midia-images{
+                .midia-images-avaliacoes{
                     width: 36px;
                 }
-                
 
-    .navbar-home{
+    .navbar-avaliacoes{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,12 +56,12 @@
         background-color: rgb(7, 8, 8);
     }
 
-    .main-home{
+    .main-avaliacoes{
         height: calc(100vh - 120px);
         width: 100vw;
         background-color: rgb(71, 73, 73);
     }
-    .footer-home{
+    .footer-avaliacoes{
         height: 20px;
         width: 100vw;
         background-color: rgb(125, 167, 167);
