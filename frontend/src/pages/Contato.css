@@ -60,21 +60,33 @@
         display: flex;
         height: calc(100vh - 120px);
         width: 100vw;
-        background-color: rgb(71, 73, 73);
+        /* background-color: rgb(71, 73, 73); */
+        background-image: url(./public/images/wallpaper-contato.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
         .main-contato-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             width: 60%;
-            background-color: darkcyan;
+            background-color: transparent;
             
         }
+            .imagem-contato{
+                /* height: 600px;
+                width: 1100px; */
+                box-shadow: 2px 2px 2px 2px #fff;
+            }
         .main-contato-right{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 40%;
-            background-color: rgb(44, 87, 87);
+            background-color: transparent;
 
         }
             form{
@@ -84,19 +96,33 @@
                 flex-direction: column;
                 background-color: whitesmoke;
                 border-radius: 30px;
-                height: 600px;
-                width: 500px;
+                height: 500px;
+                width: 400px;
                 gap: 30px;
+                box-shadow: 4px 2px 0px 4px #000;
 
                 & .form-input{
                     height: 35px;
                     width: 250px;
-                    
+                    padding-left: 5px;
+                    border-radius: 5px;
                 }
 
                 & .form-texterea{
                     height: 100px;
                     width: 250px;
+                    padding-left: 5px;
+                    padding-top: 5px;
+                    border-radius: 5px;
+                }
+
+                & .form-button{
+                    height: 30px;
+                    width: 200px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: darkgreen;
+                    cursor: pointer;
                 }
             }
 

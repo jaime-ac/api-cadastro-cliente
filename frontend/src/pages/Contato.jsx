@@ -31,7 +31,7 @@ function Contato() {
 
       <div className="main-contato">
 
-        <div className="main-contato-left"></div>
+        <div className="main-contato-left"><img src="./public/images/imagem-contato.png" alt="" className='imagem-contato'/></div>
 
         <div className="main-contato-right">
 
@@ -41,6 +41,7 @@ function Contato() {
             <input type="email" name="" id="" className='form-input' placeholder='E-mail'/>
             <input type="text" name="" id="" className='form-input' placeholder='Serviço'/>
             <textarea name="" id="" className='form-texterea' placeholder='Descreva o assunto aqui...'></textarea>
+            <button className="form-button">Enviar</button>
           </form>
 
         </div>
