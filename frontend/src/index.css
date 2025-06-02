@@ -14,3 +14,16 @@
   font-size: 30px;
   font-weight: bolder;
 }
+
+:root{
+  --cor1: #d6a56c;
+  --cor2: #442d1f;
+  --cor3: #915d38;
+  --cor4: #85afa3;
+  --cor5: #120e0e;
+  --cor6: #734828;
+  --cor7: #5c6e5c;
+  --cor8: #879394;
+  --cor9: #bf304c;
+  --cor10: #395560;
+}

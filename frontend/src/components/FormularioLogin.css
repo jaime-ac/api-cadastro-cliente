@@ -1,0 +1,19 @@
+.container-login{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+    .form-login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor3);
+        border: none;
+        height: 70%;
+        width: 40%;
+        gap: 30px;
+        box-shadow: inset 0px 0px 8px 10px var(--cor1);
+    }

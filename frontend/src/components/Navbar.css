@@ -4,12 +4,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: transparent;
     gap: 30px;
     font-size: 20px;
-    
 }
 
-a{
+.container-navbar a{
+    color: white;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    transition: text-shadow 0.3s ease;
 }
+    .container-navbar a:hover {
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+    }
