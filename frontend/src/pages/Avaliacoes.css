@@ -1,4 +1,4 @@
-.container-avaliacoes{
+/* .container-avaliacoes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,29 +45,87 @@
                     letter-spacing: 2px;
                 }
 
-            .main-avaliacoes-left-box{
-                height: 90vh;
+            /* Container principal */
+            /* .main-avaliacoes-left-box {
+                height: 100vh;
                 width: 100%;
+                background-color: rgb(106, 116, 116);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                background-color: rgb(106, 116, 116);
-            }
-                .box-avaliacoes-container{
-                    display: flex;
-                    flex-direction: column;
-                    background-color: whitesmoke;
-                    height: 78vh;
-                    width: 95%;
-                    gap: 20px;
-                    padding: 10px;
-                    overflow-y: auto;
-                }
+            } */
             
-        .main-avaliacoes-right{
+            /* Container que tem a barra de rolagem */
+            /* .box-avaliacoes-container {
+                background-color: whitesmoke;
+                width: 95%;
+                height: 80vh;
+                border-radius: 12px;
+                padding: 10px;
+              
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              
+                overflow-y: auto;
+            } */
+
+            
+        /* .main-avaliacoes-right{
             height: 100%;
             width: 50%;
             background-color: transparent;
-        }
-   
+        /* } */
+
+        .main-avaliacoes {
+            display: flex;
+            height: calc(100vh - 130px);
+            width: 100%;
+            background-color: var(--cor8);
+          }
+          
+          .main-avaliacoes-left {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            background-color: rgb(106, 116, 116);
+            padding: 10px;
+          }
+          
+          .main-avaliacoes-left-title {
+            padding: 10px;
+          }
+          
+          .avaliacoes-title {
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+          }
+          
+          .main-avaliacoes-left-box {
+            width: 100%;
+            height: 100%;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 10px;
+            overflow-y: auto;
+          }
+          
+          .box-avaliacoes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+          }
+          
+          .box-avaliacoes {
+            height: 300px;
+            width: 90%;
+            background-color: rgb(191, 129, 48);
+            border: none;
+            border-radius: 20px;
+          }
+          

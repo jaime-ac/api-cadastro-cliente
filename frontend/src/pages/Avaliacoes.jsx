@@ -17,10 +17,10 @@ function Avaliacoes() {
 
         <div className="header-social-midia">
 
-          <buuton className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></buuton>
-          <buuton className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></buuton>
-          <buuton className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></buuton>
-          <buuton className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></buuton>
+          <button className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></button>
+          <button className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></button>
+          <button className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></button>
+          <button className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></button>
           
           
         </div>
@@ -43,21 +43,12 @@ function Avaliacoes() {
               <BoxAvaliacoes />
               <BoxAvaliacoes />
               <BoxAvaliacoes />
+              {/* <BoxAvaliacoes />
               <BoxAvaliacoes />
               <BoxAvaliacoes />
               <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
+              <BoxAvaliacoes /> */}
+              
             </div>
           </div>
         </div>

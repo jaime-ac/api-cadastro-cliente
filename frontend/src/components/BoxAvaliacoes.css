@@ -1,7 +1,12 @@
-.box-avaliacoes{
+/* .box-avaliacoes{
     height: 300px;
     width: 900px;
     background-color: rgb(191, 129, 48);
     border: none;
     border-radius: 20px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+} */
