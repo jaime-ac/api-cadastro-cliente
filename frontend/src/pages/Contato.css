@@ -3,68 +3,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('./public/images/fundo-contato.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-    .header-contato{
-        display: flex;
-        height: 60px;
-        width: 100vw;
-        background-color: rgb(172, 102, 38);
-    }
-        .header-logo-contato{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            padding-left: 20px;
-            height: 100%;
-            width: 50%;
-            background-color: whitesmoke;
-        }
-        
-        .header-social-midia-contato{
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            height: 100%;
-            width: 50%;
-            gap: 10px;
-            padding-right: 20px;
-            background-color: transparent;
-
-        }
-            .header-midia-button-contato{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 100px;
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                background-color: whitesmoke;
-                cursor: pointer;
-            }
-                .midia-images-contato{
-                    width: 36px;
-                }
-
     .navbar-contato{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 40px;
         width: 100vw;
-        background-color: rgb(7, 8, 8);
+        background-color: transparent;
     }
 
     .main-contato{
         display: flex;
-        height: calc(100vh - 120px);
+        height: calc(100vh - 130px);
         width: 100vw;
-        /* background-color: rgb(71, 73, 73); */
-        background-image: url(./public/images/wallpaper-contato.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-color: transparent;
+        
     }
         .main-contato-left{
             display: flex;
@@ -75,11 +32,7 @@
             background-color: transparent;
             
         }
-            .imagem-contato{
-                /* height: 600px;
-                width: 1100px; */
-                box-shadow: 2px 2px 2px 2px #fff;
-            }
+
         .main-contato-right{
             display: flex;
             justify-content: center;
@@ -94,40 +47,46 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                background-color: whitesmoke;
+                /* background-color: whitesmoke; */
+                background-color: var(--cor3);
                 border-radius: 30px;
-                height: 500px;
-                width: 400px;
+                height: 650px;
+                width: 450px;
                 gap: 30px;
-                box-shadow: 4px 2px 0px 4px #000;
+                box-shadow: 0px 0px 8px 10px var(--cor1);
 
                 & .form-input{
-                    height: 35px;
-                    width: 250px;
+                    height: 40px;
+                    width: 300px;
                     padding-left: 5px;
-                    border-radius: 5px;
+                    border-radius: 10px;
+                    font-size: 20px;
                 }
 
                 & .form-texterea{
-                    height: 100px;
-                    width: 250px;
+                    height: 150px;
+                    width: 300px;
                     padding-left: 5px;
                     padding-top: 5px;
-                    border-radius: 5px;
+                    border-radius: 10px;
+                    font-size: 20px;
                 }
 
                 & .form-button{
-                    height: 30px;
+                    height: 35px;
                     width: 200px;
-                    border-radius: 10px;
                     border: none;
-                    background-color: darkgreen;
+                    border-radius: 15px;
                     cursor: pointer;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: var(--cor5);
+                   }
+                    .form-button:hover{
+                        background-color: var(--cor1);
+                        box-shadow: 0px 0px 8px 10px var(--cor6);
+                        height: 40px;
+                        width: 270px;
+            
                 }
             }
-
-    .footer-contato{
-        height: 20px;
-        width: 100vw;
-        background-color: rgb(125, 167, 167);
-    }

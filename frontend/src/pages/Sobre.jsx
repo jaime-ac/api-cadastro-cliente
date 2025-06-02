@@ -6,20 +6,20 @@ function Sobre() {
   return (
     <div className='container-sobre'>
 
-      <div className="header-sobre">
+      <div className="header">
 
-        <div className="header-logo-sobre">
+        <div className="header-logo">
 
           <label htmlFor="" className="nome-empresa">Black Hair</label>
 
         </div>
 
-        <div className="header-social-midia-sobre">
+        <div className="header-social-midia">
 
-          <buuton className="header-midia-button-sobre"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images-sobre"/></buuton>
-          <buuton className="header-midia-button-sobre"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images-sobre"/></buuton>
-          <buuton className="header-midia-button-sobre"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images-sobre"/></buuton>
-          <buuton className="header-midia-button-sobre"><img src="./public/icons/icon-x.svg" alt="" className="midia-images-sobre"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></buuton>
           
         </div>
 
@@ -33,9 +33,10 @@ function Sobre() {
 
       </div>
 
-      <div className="footer-sobre">
+      <div className="footer">
 
       </div>
+      
     </div>
   )
 }

@@ -6,20 +6,20 @@ function Contato() {
   return (
     <div className='container-contato'>
 
-      <div className="header-contato">
+      <div className="header">
 
-        <div className="header-logo-contato">
+        <div className="header-logo">
 
           <label htmlFor="" className="nome-empresa">Black Hair</label>
 
         </div>
 
-        <div className="header-social-midia-contato">
+        <div className="header-social-midia">
 
-          <buuton className="header-midia-button-contato"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images-contato"/></buuton>
-          <buuton className="header-midia-button-contato"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images-contato"/></buuton>
-          <buuton className="header-midia-button-contato"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images-contato"/></buuton>
-          <buuton className="header-midia-button-contato"><img src="./public/icons/icon-x.svg" alt="" className="midia-images-contato"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></buuton>
           
         </div>
 
@@ -31,7 +31,7 @@ function Contato() {
 
       <div className="main-contato">
 
-        <div className="main-contato-left"><img src="./public/images/imagem-contato.png" alt="" className='imagem-contato'/></div>
+        <div className="main-contato-left"></div>
 
         <div className="main-contato-right">
 
@@ -48,7 +48,7 @@ function Contato() {
 
       </div>
 
-      <div className="footer-contato">
+      <div className="footer">
 
       </div>
       

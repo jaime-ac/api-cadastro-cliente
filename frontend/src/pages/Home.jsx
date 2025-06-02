@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className='container-home'>
 
-      <div className="header-home">
+      <div className="header">
 
         <div className="header-logo">
 
@@ -59,7 +59,7 @@ function Home() {
 
       </div>
 
-      <div className="footer-home">
+      <div className="footer">
 
       </div>
         

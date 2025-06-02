@@ -6,7 +6,7 @@ function Service() {
   return (
     <div className='container-service'>
 
-      <div className="header-service">
+      <div className="header">
 
         <div className="header-logo">
 
@@ -16,10 +16,10 @@ function Service() {
 
         <div className="header-social-midia">
 
-          <buuton className="header-midia-button-service"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images-service"/></buuton>
-          <buuton className="header-midia-button-service"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images-service"/></buuton>
-          <buuton className="header-midia-button-service"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images-service"/></buuton>
-          <buuton className="header-midia-button-service"><img src="./public/icons/icon-x.svg" alt="" className="midia-images-service"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></buuton>
+          <buuton className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></buuton>
           
         </div>
 
@@ -33,7 +33,7 @@ function Service() {
 
       </div>
 
-      <div className="footer-service">
+      <div className="footer">
 
       </div>
 

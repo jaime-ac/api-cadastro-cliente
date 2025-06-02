@@ -3,49 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('./public/images/fundo-sobre.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-    .header-sobre{
-        display: flex;
-        height: 60px;
-        width: 100vw;
-        background-color: rgb(21, 0, 139);
-    }
-        .header-logo-sobre{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            padding-left: 20px;
-            height: 100%;
-            width: 50%;
-            background-color: whitesmoke;
-        }
-        
-        .header-social-midia-sobre{
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            height: 100%;
-            width: 50%;
-            gap: 10px;
-            padding-right: 20px;
-            background-color: transparent;
-
-        }
-            .header-midia-button-sobre{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 100px;
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                background-color: whitesmoke;
-                cursor: pointer;
-            }
-                .midia-images-sobre{
-                    width: 36px;
-                }
 
     .navbar-sobre{
         display: flex;
@@ -53,16 +14,11 @@
         align-items: center;
         height: 40px;
         width: 100vw;
-        background-color: rgb(7, 8, 8);
+        background-color: transparent;
     }
 
     .main-sobre{
-        height: calc(100vh - 120px);
+        height: calc(100vh - 130px);
         width: 100vw;
-        background-color: rgb(71, 73, 73);
-    }
-    .footer-sobre{
-        height: 20px;
-        width: 100vw;
-        background-color: rgb(125, 167, 167);
+        background-color: transparent;
     }
