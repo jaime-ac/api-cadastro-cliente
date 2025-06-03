@@ -1,131 +1,204 @@
-/* .container-avaliacoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url('./public/images/fundo-avaliacoes.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.container-avaliacoes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('./public/images/fundo-avaliacoes.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
     .navbar-avaliacoes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        width: 100vw;
-        background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 100vw;
+      background-color: transparent;
     }
 
     .main-avaliacoes{
-        display: flex;
-        height: calc(100vh - 130px);
-        width: 100vw;
-        background-color: transparent;
+      display: flex;
+      height: calc(100vh - 130px);
+      width: 100%;
+      background-color: transparent;
     }
         .main-avaliacoes-left{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 50%;
-            background-color: transparent;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+          width: 50%;
+          background-color: transparent;
+          padding: 10px;
         }
             .main-avaliacoes-left-title{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: transparent;
-                height: 10%;
-                width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: transparent;
+              padding: 10px;
+              height: 10%;
+              width: 100%;
+              gap: 10px;
             }
                 .avaliacoes-title{
-                    font-size: 50px;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 10px #fff;
-                    letter-spacing: 2px;
+                  font-size: 50px;
+                  font-weight: bolder;
+                  text-shadow: 1px 1px 10px #fff;
+                  letter-spacing: 2px;
                 }
+                .avaliacoes-title-button{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  cursor: pointer;
+                  height: 50px;
+                  width: 50px;
+                  border-radius: 50%;
+                  margin-top: 5px;
+                  border: none;
+                  background-color: transparent;
+                  box-shadow: 0px 0px 3px 4px #fff;
+                }
+                  .img-avaliacoes-button{
+                    height: 40px;
+                    width: 40px;
+                  }
 
             /* Container principal */
-            /* .main-avaliacoes-left-box {
-                height: 100vh;
-                width: 100%;
-                background-color: rgb(106, 116, 116);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            } */
+            .main-avaliacoes-left-box {
+              height: 100%;
+              width: 100%;
+              background-color: transparent;
+              border-radius: 10px;
+              padding: 10px;
+              overflow-y: auto;
+            } 
             
             /* Container que tem a barra de rolagem */
-            /* .box-avaliacoes-container {
-                background-color: whitesmoke;
-                width: 95%;
-                height: 80vh;
-                border-radius: 12px;
-                padding: 10px;
-              
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-              
-                overflow-y: auto;
-            } */
+            .box-avaliacoes-container {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              align-items: center;
+            }
 
-            
-        /* .main-avaliacoes-right{
-            height: 100%;
-            width: 50%;
-            background-color: transparent;
-        /* } */
+        .main-avaliacoes-right{
+          height: 100%;
+          width: 50%;
+          background-color: transparent;
+        }
 
-        .main-avaliacoes {
-            display: flex;
-            height: calc(100vh - 130px);
-            width: 100%;
-            background-color: var(--cor8);
-          }
-          
-          .main-avaliacoes-left {
-            width: 60%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            background-color: rgb(106, 116, 116);
-            padding: 10px;
-          }
-          
-          .main-avaliacoes-left-title {
-            padding: 10px;
-          }
-          
-          .avaliacoes-title {
-            font-size: 30px;
-            color: white;
-            font-weight: bold;
-          }
-          
-          .main-avaliacoes-left-box {
-            width: 100%;
-            height: 100%;
+  dialog{
+    height: 500px;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    width: 35%;
+    position: fixed;
+    top: 45%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+  }
+    .container-form-dialog{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 95%;
+      width: 95%;
+      background-color: var(--cor1);
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 0px 2px 4px #fff;
+      padding: 10px;
+      gap: 10px;
+    }
+      .parte-fechar-dialog{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 8%;
+        width: 100%;
+        background-color: transparent;
+        padding: 10px;
+      }
+        .fechar-form-dialog{
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+        }
+
+      .parte-identificacao-dialog{
+        display: flex;
+        height: 20%;
+        width: 100%;
+        background-color: transparent;
+      }
+        .parte-foto-usuario{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 15%;
+          background-color: transparent;
+        }
+          .foto-usuario{
+            height: 99%;
+            width: 98%;
             background-color: whitesmoke;
-            border-radius: 10px;
-            padding: 10px;
-            overflow-y: auto;
+            border-radius: 50%;
           }
-          
-          .box-avaliacoes-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
+
+        .parte-nome-usuario{
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          padding: 10px;
+          height: 100%;
+          width: 85%;
+          background-color: transparent;
+        }
+          .nome-usuario{
+            font-size: 30px;
+            font-weight: bolder;
           }
-          
-          .box-avaliacoes {
-            height: 300px;
-            width: 90%;
-            background-color: rgb(191, 129, 48);
-            border: none;
-            border-radius: 20px;
-          }
-          
+
+      .parte-mensagem-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        width: 100%;
+        background-color: transparent;
+      }
+        .parte-mensagem{
+          width: 98%;
+          height: 98%;
+          max-height: 98%;
+          max-width: 98%;
+          border: none;
+          border-radius: 5px;
+          padding: 5px;
+          font-size: 18px;
+        }
+
+      .parte-enviar-dialog{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 12%;
+        width: 100%;
+        background-color: transparent;
+        padding: 10px;
+      }
+        .botao-enviar-mensagem{
+          height: 30px;
+          width: 100px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+        }

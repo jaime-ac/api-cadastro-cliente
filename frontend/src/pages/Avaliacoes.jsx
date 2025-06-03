@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Avaliacoes.css"
 import Navbar from '../components/Navbar'
 import BoxAvaliacoes from '../components/BoxAvaliacoes'
 
 function Avaliacoes() {
+  const [abrirForm, setAbrirForm] = useState(false);
   return (
     <div className='container-avaliacoes'>
 
@@ -22,7 +23,6 @@ function Avaliacoes() {
           <button className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></button>
           <button className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></button>
           
-          
         </div>
 
       </div>
@@ -34,8 +34,10 @@ function Avaliacoes() {
       <div className="main-avaliacoes">
 
         <div className="main-avaliacoes-left">
+
           <div className="main-avaliacoes-left-title">
             <label htmlFor="" className="avaliacoes-title">Avaliações</label>
+            <button className="avaliacoes-title-button" onClick={() => setAbrirForm(true)}><img src="./public/icons/botao-avaliacoes.svg" alt="" className='img-avaliacoes-button'/></button>
           </div>
 
           <div className="main-avaliacoes-left-box">
@@ -43,14 +45,9 @@ function Avaliacoes() {
               <BoxAvaliacoes />
               <BoxAvaliacoes />
               <BoxAvaliacoes />
-              {/* <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes />
-              <BoxAvaliacoes /> */}
-              
             </div>
           </div>
+
         </div>
 
         <div className="main-avaliacoes-right"></div>
@@ -60,6 +57,36 @@ function Avaliacoes() {
       <div className="footer">
 
       </div>
+
+      <dialog open={abrirForm}>
+        <div className="container-form-dialog">
+
+          <div className="parte-fechar-dialog">
+            <button className="fechar-form-dialog" onClick={() => setAbrirForm(false)}>❌</button>
+          </div>
+
+          <div className="parte-identificacao-dialog">
+
+            <div className="parte-foto-usuario">
+              <div className="foto-usuario"></div>
+            </div>
+            <div className="parte-nome-usuario">
+              <label htmlFor="" className="nome-usuario">Nome Usuário</label>
+            </div>
+
+          </div>
+
+          <div className="parte-mensagem-dialog">
+            <textarea className="parte-mensagem" placeholder='Deixe sua avaliação aqui...'/>
+          </div>
+
+          <div className="parte-enviar-dialog">
+            <button className="botao-enviar-mensagem">Enviar</button>
+          </div>
+
+
+        </div>
+      </dialog>
 
     </div>
   )

@@ -7,6 +7,7 @@ function FormularioCadastro() {
     const [cpf, setCpf] = useState('');
     const [endereco, setEndereco] = useState('');
     const [senha, setSenha] = useState('');
+    const [verSenha, setVerSenha] = useState(false);
 
   return (
     <div className='container-cadastro'>
@@ -17,28 +18,34 @@ function FormularioCadastro() {
 
             <input type="text" className="form-inputs" placeholder='Nome completo'
                 value={nome}
-                onChange={setNome}
+                onChange={(e) => setNome(e.target.value)}
             />
 
             <input type="email" className="form-inputs" placeholder='E-mail'
                 value={email}
-                onChange={setEmail}
+                onChange={(e) => setEmail(e.target.value)}
             />
 
             <input type="text" className="form-inputs" placeholder='CPF'
                 value={cpf}
-                onChange={setCpf}
+                onChange={(e) => setCpf(e.target.value)}
             />
 
             <input type="text" className="form-inputs" placeholder='Endereço'
                 value={endereco}
-                onChange={setEndereco}
+                onChange={(e) => setEndereco(e.target.value)}
             />
 
-            <input type="password" className="form-inputs" placeholder='Senha'
-                value={senha}
-                onChange={setSenha}
-            />
+            <div className="parte-senha-cadastro">
+
+                <input className="form-input-senha" placeholder='Senha'
+                    type={verSenha ? "text" : "password"}
+                    value={senha}
+                    onChange={(e) => setSenha(e.target.value)}
+                />
+                <button type="button" className="botao-visualizar-senha" onClick={() => setVerSenha((visivel) => !visivel)}>{verSenha ? "🙈" : "👁️‍🗨️" }</button>
+
+            </div>
 
             <button className="form-button-cadastro">Cadastrar</button>
 

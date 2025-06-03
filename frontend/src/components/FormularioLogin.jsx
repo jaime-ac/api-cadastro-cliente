@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./FormularioLogin.css"
 
 function FormularioLogin() {
+    const [senhaVisivel, setSenhaVisivel] = useState(false);
     const [cpfLogin, setCpfLogin] = useState();
     const [senhaLogin, setSenhaLogin] = useState();
 
@@ -14,15 +15,26 @@ function FormularioLogin() {
 
             <input type="text" className="form-inputs" placeholder='CPF'
                 value={cpfLogin}
-                onChange={setCpfLogin}
+                onChange={(e) => setCpfLogin(e.target.value)}
             />
 
-            <input type="password" className="form-inputs" placeholder='Senha'
-                value={senhaLogin}
-                onChange={setSenhaLogin}
-            />      
+            <div className="parte-senha-cadastro">
 
-            <button className="form-button-cadastro">Login</button>
+                <input className="form-input-senha" placeholder='Senha'
+                    type={senhaVisivel ? "text" : "password"}
+                    value={senhaLogin}
+                    onChange={(e) => setSenhaLogin(e.target.value)}
+                />
+                <button className="botao-visualizar-senha" 
+                    type='button'
+                    onClick={() => setSenhaVisivel((visivel) => !visivel)}
+                >
+                    {senhaVisivel ? "🙈" : "👁️‍🗨️" }
+                </button>
+
+            </div>   
+
+            <button className="form-button-cadastro" >Login</button>
 
         </form>
       

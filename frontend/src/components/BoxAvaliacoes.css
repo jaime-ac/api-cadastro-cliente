@@ -1,12 +1,13 @@
-/* .box-avaliacoes{
-    height: 300px;
+.box-avaliacoes{
+    height: 230px;
     width: 900px;
     background-color: rgb(191, 129, 48);
     border: none;
     border-radius: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     color: white;
-    font-size: 18px;
-} */
+    font-size: 25px;
+    padding: 10px;
+    overflow-y: auto;
+}
