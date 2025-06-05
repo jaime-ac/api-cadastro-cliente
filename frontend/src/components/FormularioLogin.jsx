@@ -14,6 +14,7 @@ function FormularioLogin() {
             <label htmlFor="" className="form-title">Login</label>
 
             <input type="text" className="form-inputs" placeholder='CPF'
+                maxLength={11}
                 value={cpfLogin}
                 onChange={(e) => setCpfLogin(e.target.value)}
             />

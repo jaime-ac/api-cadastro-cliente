@@ -26,7 +26,8 @@ function FormularioCadastro() {
                 onChange={(e) => setEmail(e.target.value)}
             />
 
-            <input type="text" className="form-inputs" placeholder='CPF'
+            <input type="text" className="form-inputs" placeholder='CPF (sem pontos e hífen)'
+                maxLength={11}
                 value={cpf}
                 onChange={(e) => setCpf(e.target.value)}
             />

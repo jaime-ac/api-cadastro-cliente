@@ -12,8 +12,8 @@
         align-items: center;
         background-color: var(--cor3);
         border: none;
-        height: 70%;
-        width: 40%;
+        height: 80%;
+        width: 45%;
         gap: 30px;
         box-shadow: inset 0px 0px 8px 10px var(--cor1);
     }
