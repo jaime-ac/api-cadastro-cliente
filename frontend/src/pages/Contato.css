@@ -42,25 +42,25 @@
             background-color: transparent;
 
         }
-            form{
+            .form-contato{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                /* background-color: whitesmoke; */
                 background-color: var(--cor3);
                 border-radius: 30px;
-                height: 650px;
-                width: 450px;
-                gap: 30px;
+                height: 500px;
+                width: 400px;
+                gap: 20px;
                 box-shadow: 0px 0px 8px 10px var(--cor1);
 
                 & .form-input{
-                    height: 40px;
+                    height: 30px;
                     width: 340px;
                     padding-left: 5px;
                     border-radius: 10px;
-                    font-size: 20px;
+                    font-size: 15px;
+                    border: none;
                 }
 
                 & .form-texterea{
@@ -71,7 +71,8 @@
                     padding-left: 5px;
                     padding-top: 5px;
                     border-radius: 10px;
-                    font-size: 20px;
+                    font-size: 15px;
+                    border: none;
                 }
 
                 & .form-button{

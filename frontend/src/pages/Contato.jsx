@@ -35,7 +35,7 @@ function Contato() {
 
         <div className="main-contato-right">
 
-          <form action="">
+          <form action="" className='form-contato'>
             <h1>Contate-nos</h1>
             <input type="text" name="" id="" className='form-input' placeholder='Nome'/>
             <input type="email" name="" id="" className='form-input' placeholder='E-mail'/>

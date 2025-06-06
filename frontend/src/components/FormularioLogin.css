@@ -10,8 +10,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         background-color: var(--cor3);
         border: none;
+        border-radius: 20px;
         height: 80%;
         width: 45%;
         gap: 30px;
