@@ -12,12 +12,27 @@ app.use(express.json());
 
 //ACESSAR A ROTA E USAR A FUNÇÃO IMPORTADA PARA INSERIR DADOS NA TABELA
 app.post("/clientes", async (req, res) => {
+    // console.log("req.body =======>>>> ", req.body)
+
+    try {
+        
+        await server.createCustomer(req.body);
     
-    await functions.createCustomer(req.body);
+        const { cpf } = req.body;
+    
+        console.log("Dados inseridos com sucesso!")
+        res.sendStatus(201).json({ 
+            message: "Cliente cadastrado com sucesso!",
+            cpfCadastrado: cpf
+        });
 
-    res.sendStatus(201);
-    console.log("Dados inseridos com sucesso!")
+    } catch (error) {
+        
+        console.error("Erro ao cadastrar cliente:", error);
+        res.status(500).json({ error: "Erro ao cadastrar cliente." });
 
+    }
+    
 })
 
 app.listen(port);

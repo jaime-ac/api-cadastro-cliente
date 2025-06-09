@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import "./FormularioCadastro.css"
+import React, { useState } from 'react';
+import "./FormularioCadastro.css";
+import axios from 'axios';
 
 function FormularioCadastro() {
     const [nome, setNome] = useState('');
@@ -9,10 +10,37 @@ function FormularioCadastro() {
     const [senha, setSenha] = useState('');
     const [verSenha, setVerSenha] = useState(false);
 
+    const cadastrarCliente = async (e) => {
+        e.preventDefault(); // impede o recarregamento da página
+
+        const cliente = { cpf, nome, email, endereco, senha };
+
+        try {
+
+            const response = await axios.post("http://localhost:3000/clientes", cliente);
+
+            alert("Cadastro realizado com sucesso!");
+
+            // limpa os campos
+            setNome('');
+            setEmail('');
+            setCpf('');
+            setEndereco('');
+            setSenha('');
+
+        } catch (error) {
+
+            console.error("Erro no cadastro do usuário", error);
+            alert("Erro ao cadastrar o usuário, tente novamente!");
+
+        }
+
+    };
+
   return (
     <div className='container-cadastro'>
 
-        <form action="" className='form-cadastro'>
+        <form action="" onSubmit={cadastrarCliente} className='form-cadastro'>
 
             <label htmlFor="" className="form-title">Cadastre-se</label>
 
