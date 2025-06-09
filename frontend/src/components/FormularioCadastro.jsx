@@ -11,15 +11,30 @@ function FormularioCadastro() {
     const [verSenha, setVerSenha] = useState(false);
 
     const cadastrarCliente = async (e) => {
+        
         e.preventDefault(); // impede o recarregamento da página
 
-        const cliente = { cpf, nome, email, endereco, senha };
+        const cliente = { 
+            cpf, 
+            nome, 
+            email, 
+            endereco, 
+            senha 
+        };
 
         try {
 
-            const response = await axios.post("http://localhost:3000/clientes", cliente);
+            const response = await axios.post("http://localhost:3000/clientes", cliente, {
+
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+
+            });
 
             alert("Cadastro realizado com sucesso!");
+            console.log("Usuário Cadastrado", response.data);
 
             // limpa os campos
             setNome('');
@@ -31,7 +46,18 @@ function FormularioCadastro() {
         } catch (error) {
 
             console.error("Erro no cadastro do usuário", error);
-            alert("Erro ao cadastrar o usuário, tente novamente!");
+
+            // Mostra mais detalhes do erro
+            if (error.response) {
+                console.log("Erro do servidor:", error.response.data);
+                alert(`Erro: ${error.response.data.error || 'Erro no servidor'}`);
+            } else if (error.request) {
+                console.log("Erro de rede:", error.request);
+                alert("Erro de conexão. Verifique se o backend está rodando.");
+            } else {
+                alert("Erro ao cadastrar o usuário, tente novamente!");
+            }
+            // alert("Erro ao cadastrar o usuário, tente novamente!");
 
         }
 
