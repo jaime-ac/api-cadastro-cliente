@@ -1,0 +1,26 @@
+.container-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(46, 41, 41); */
+    background-image: url('./public/images/fundo-servicos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .main-user{
+        display: flex;
+        height: calc(100vh - 90px);
+        width: 100vw;
+        background-color: var(--cor3);
+    }
+    .main-user-left{
+        height: 100%;
+        width: 30%;
+        background-color: rgb(114, 95, 95);
+    }
+    .main-user-right{
+        height: 100%;
+        width: 70%;
+        background-color: rgb(90, 45, 45);
+    }
