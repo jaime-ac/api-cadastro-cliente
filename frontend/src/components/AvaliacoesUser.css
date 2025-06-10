@@ -1,0 +1,8 @@
+.container-avaliacoes-user{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(25, 116, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

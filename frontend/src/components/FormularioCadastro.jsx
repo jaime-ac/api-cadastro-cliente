@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 import "./FormularioCadastro.css";
 import axios from 'axios';
 
@@ -9,6 +10,8 @@ function FormularioCadastro() {
     const [endereco, setEndereco] = useState('');
     const [senha, setSenha] = useState('');
     const [verSenha, setVerSenha] = useState(false);
+
+    const navigate = useNavigate();
 
     const cadastrarCliente = async (e) => {
         
@@ -42,6 +45,8 @@ function FormularioCadastro() {
             setCpf('');
             setEndereco('');
             setSenha('');
+
+            navigate('/user');
 
         } catch (error) {
 

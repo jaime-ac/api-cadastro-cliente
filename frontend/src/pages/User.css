@@ -14,13 +14,67 @@
         width: 100vw;
         background-color: var(--cor3);
     }
+
     .main-user-left{
+        display: flex;
+        flex-direction: column;
         height: 100%;
-        width: 30%;
-        background-color: rgb(114, 95, 95);
+        width: 25%;
     }
+        .main-user-left-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            height: 40%;
+            width: 100%;
+            background-color: rgb(190, 33, 33);
+        }
+            .main-user-left-image{
+                height: 200px;
+                width: 200px;
+                background-color: whitesmoke;
+                border: none;
+                border-radius: 50%;
+            }
+            .main-user-left-name{
+                font-size: 25px;
+                font-weight: bolder;
+            }
+
+        .main-user-left-bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            height: 60%;
+            width: 100%;
+            background-color: rgb(114, 95, 95);
+        }
+            .botao-menu{
+                height: 40px;
+                width: 250px;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+                .botao-menu:hover{
+                    height: 45px;
+                    width: 300px;
+                    font-size: 30px;
+                    font-weight: bolder;
+                    border: none;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+
     .main-user-right{
         height: 100%;
-        width: 70%;
+        width: 75%;
         background-color: rgb(90, 45, 45);
+        font-size: 30px;
     }

@@ -1,0 +1,8 @@
+.container-contato-user{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(72, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

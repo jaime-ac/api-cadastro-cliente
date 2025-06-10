@@ -10,7 +10,7 @@ function Navbar() {
         <Link to="/contato">Contato</Link>
         <Link to="/sobre">Sobre Nós</Link>
         <Link to="/avaliacoes">Avaliações</Link>
-        <Link to="/user">User</Link>
+        {/* <Link to="/user">User</Link> */}
     </nav>
   )
 }
