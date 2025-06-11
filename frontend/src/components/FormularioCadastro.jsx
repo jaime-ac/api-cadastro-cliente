@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import "./FormularioCadastro.css";
 import axios from 'axios';
+import { validarEmail, validarCPF, validarPassword } from '../functions/functions';
 
 function FormularioCadastro() {
     const [nome, setNome] = useState('');
@@ -10,15 +11,43 @@ function FormularioCadastro() {
     const [endereco, setEndereco] = useState('');
     const [senha, setSenha] = useState('');
     const [verSenha, setVerSenha] = useState(false);
+    const [erroEmail, setErroEmail] = useState('');
+    const [erroCPF, setErroCPF] = useState('');
+    const [erroSenha, setErroSenha] = useState('');
+
 
     const navigate = useNavigate();
 
     const cadastrarCliente = async (e) => {
-        
         e.preventDefault(); // impede o recarregamento da página
 
+        setErroEmail('');
+        setErroCPF('');
+        setErroSenha('');
+
+        if (!validarEmail(email)) {
+            setErroEmail('E-mail inválido!')
+            return;
+        }else {
+            setErroEmail('');
+        }
+
+        if (!validarCPF(cpf)) {
+            setErroCPF('CPF inválido');
+            return;
+        }else {
+            setErroCPF('');
+        }
+
+        if (!validarPassword(senha)) {
+            setErroSenha('A senha deve ter no mínimo 6 caracteres');
+            return;
+        }else {
+            setErroSenha('');
+        }
+
         const cliente = { 
-            cpf, 
+            cpf,
             nome, 
             email, 
             endereco, 
@@ -62,7 +91,6 @@ function FormularioCadastro() {
             } else {
                 alert("Erro ao cadastrar o usuário, tente novamente!");
             }
-            // alert("Erro ao cadastrar o usuário, tente novamente!");
 
         }
 
@@ -75,30 +103,46 @@ function FormularioCadastro() {
 
             <label htmlFor="" className="form-title">Cadastre-se</label>
 
-            <input type="text" className="form-inputs" placeholder='Nome completo'
+            <input 
+                type="text" 
+                className="form-inputs" 
+                placeholder='Nome completo'
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
             />
-
-            <input type="email" className="form-inputs" placeholder='E-mail'
+            
+            <input 
+                type="email" 
+                className="form-inputs" 
+                placeholder='E-mail'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
+            {erroEmail && <p className='mensagem-erro'>{erroEmail}</p>}
 
-            <input type="text" className="form-inputs" placeholder='CPF (sem pontos e hífen)'
+            <input 
+                type="text" 
+                className="form-inputs" 
+                placeholder='CPF (sem pontos e hífen)'
                 maxLength={11}
                 value={cpf}
-                onChange={(e) => setCpf(e.target.value)}
+                onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))} //o .replace(/\D/g, '') garante que só seja digitado números; 
             />
+            {erroCPF && <p className='mensagem-erro'>{erroCPF}</p>}
 
-            <input type="text" className="form-inputs" placeholder='Endereço'
+            <input 
+                type="text" 
+                className="form-inputs" 
+                placeholder='Endereço'
                 value={endereco}
                 onChange={(e) => setEndereco(e.target.value)}
             />
 
             <div className="parte-senha-cadastro">
 
-                <input className="form-input-senha" placeholder='Senha'
+                <input 
+                    className="form-input-senha" 
+                    placeholder='Senha'
                     type={verSenha ? "text" : "password"}
                     value={senha}
                     onChange={(e) => setSenha(e.target.value)}
@@ -106,6 +150,7 @@ function FormularioCadastro() {
                 <button type="button" className="botao-visualizar-senha" onClick={() => setVerSenha((visivel) => !visivel)}>{verSenha ? "🙈" : "👁️‍🗨️" }</button>
 
             </div>
+            {erroSenha && <p className='mensagem-erro'>{erroSenha}</p>}
 
             <button className="form-button-cadastro">Cadastrar</button>
 

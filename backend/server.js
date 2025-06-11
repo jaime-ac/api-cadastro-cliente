@@ -49,7 +49,6 @@ async function createCustomer(customer) {
   
       await client.query(sql, values);
 
-
     } catch (error) {
 
       console.error("Erro ao cadastrar cliente:", error);

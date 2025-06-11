@@ -32,8 +32,8 @@
             background-color: rgb(190, 33, 33);
         }
             .main-user-left-image{
-                height: 200px;
-                width: 200px;
+                height: 150px;
+                width: 150px;
                 background-color: whitesmoke;
                 border: none;
                 border-radius: 50%;
@@ -48,7 +48,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
             height: 60%;
             width: 100%;
             background-color: rgb(114, 95, 95);
