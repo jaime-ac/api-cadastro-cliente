@@ -1,15 +1,44 @@
 import React, { useState } from 'react'
 import "./FormularioLogin.css"
+import { validarCPF, validarPassword } from '../functions/functions';
+import { useNavigate } from 'react-router-dom';
 
 function FormularioLogin() {
     const [senhaVisivel, setSenhaVisivel] = useState(false);
     const [cpfLogin, setCpfLogin] = useState();
     const [senhaLogin, setSenhaLogin] = useState();
+    const [erroCpf, setErroCpf] = useState();
+    const [erroSenha, setErroSenha] = useState();
+    
+    const navigate = useNavigate();
+
+    const fazerLogin = async (e) => {
+        e.preventDefault(); // impede o recarregamento da página
+
+        setErroCpf('');
+        setErroSenha('');
+        
+        if (!validarCPF(cpf)) {
+            setErroCpf('CPF inválido');
+            return;
+        }else {
+            setErroCpf('');
+        }
+        
+        if (!validarPassword(senha)) {
+            setErroSenha('A senha deve ter no mínimo 6 caracteres');
+            return;
+        }else {
+            setErroSenha('');
+        }
+
+
+    }
 
   return (
     <div className='container-login'>
 
-        <form action="" className='form-login'>
+        <form action="" className='form-login' onSubmit={fazerLogin}>
 
             <label htmlFor="" className="form-title">Login</label>
 
