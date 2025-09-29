@@ -2,31 +2,15 @@ import React, { useState } from 'react'
 import "./Avaliacoes.css"
 import Navbar from '../components/Navbar'
 import BoxAvaliacoes from '../components/BoxAvaliacoes'
+import Header from '../components/Header';
 
 function Avaliacoes() {
   const [abrirForm, setAbrirForm] = useState(false);
   return (
     <div className='container-avaliacoes'>
 
-      <div className="header">
-
-        <div className="header-logo">
-
-          <label htmlFor="" className="nome-empresa">Black Hair</label>
-
-        </div>
-
-        <div className="header-social-midia">
-
-          <button className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></button>
-          <button className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></button>
-          <button className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></button>
-          <button className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></button>
-          
-        </div>
-
-      </div>
-
+      <Header/>
+      
       <div className="navbar-avaliacoes">
         <Navbar />
       </div>

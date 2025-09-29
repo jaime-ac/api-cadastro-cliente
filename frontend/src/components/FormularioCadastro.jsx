@@ -5,16 +5,15 @@ import axios from 'axios';
 import { validarEmail, validarCPF, validarPassword } from '../functions/functions';
 
 function FormularioCadastro() {
+    
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [cpf, setCpf] = useState('');
-    const [endereco, setEndereco] = useState('');
     const [senha, setSenha] = useState('');
     const [verSenha, setVerSenha] = useState(false);
     const [erroEmail, setErroEmail] = useState('');
     const [erroCPF, setErroCPF] = useState('');
     const [erroSenha, setErroSenha] = useState('');
-
 
     const navigate = useNavigate();
 
@@ -49,8 +48,7 @@ function FormularioCadastro() {
         const cliente = { 
             cpf,
             nome, 
-            email, 
-            endereco, 
+            email,  
             senha 
         };
 
@@ -72,7 +70,6 @@ function FormularioCadastro() {
             setNome('');
             setEmail('');
             setCpf('');
-            setEndereco('');
             setSenha('');
 
             navigate('/user');
@@ -129,14 +126,6 @@ function FormularioCadastro() {
                 onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))} //o .replace(/\D/g, '') garante que só seja digitado números; 
             />
             {erroCPF && <p className='mensagem-erro'>{erroCPF}</p>}
-
-            <input 
-                type="text" 
-                className="form-inputs" 
-                placeholder='Endereço'
-                value={endereco}
-                onChange={(e) => setEndereco(e.target.value)}
-            />
 
             <div className="parte-senha-cadastro">
 

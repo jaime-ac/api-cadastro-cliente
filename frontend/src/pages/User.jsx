@@ -5,6 +5,7 @@ import ServicosUser from '../components/ServicosUser'
 import ContatoUser from '../components/ContatoUser'
 import AvaliacoesUser from '../components/AvaliacoesUser'
 import SobreUser from '../components/SobreUser'
+import Header from '../components/Header'
 
 function User() {
 
@@ -13,23 +14,7 @@ function User() {
   return (
     <div className='container-user'>
 
-        <div className="header">
-
-            <div className="header-logo">
-
-                <label htmlFor="" className="nome-empresa">Black Hair</label>
-
-            </div>
-
-            <div className="header-social-midia">
-
-                <button className="header-midia-button"><img src="./public/icons/icon-facebook.svg" alt="" className="midia-images"/></button>
-                <button className="header-midia-button"><img src="./public/icons/icon-instagram.svg" alt="" className="midia-images"/></button>
-                <button className="header-midia-button"><img src="./public/icons/icon-tiktok.svg" alt="" className="midia-images"/></button>
-                <button className="header-midia-button"><img src="./public/icons/icon-x.svg" alt="" className="midia-images"/></button>
-            
-            </div>
-        </div>
+        <Header/>
 
         <div className="main-user">
 
@@ -45,7 +30,7 @@ function User() {
                 <div className="main-user-left-bottom">
                     <button className="botao-menu" onClick={() => setComponente('dados')}>Meus Dados</button>
                     <button className="botao-menu" onClick={() => setComponente('servicos')}>Serviços</button>
-                    <button className="botao-menu" onClick={() => setComponente('contato')}>Contato</button>
+                    {/* <button className="botao-menu" onClick={() => setComponente('contato')}>Contato</button> */}
                     <button className="botao-menu" onClick={() => setComponente('avaliacoes')}>Avaliações</button>
                     <button className="botao-menu" onClick={() => setComponente('historico')}>Histórico</button>
                 </div>

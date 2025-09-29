@@ -5,7 +5,9 @@ function DadosUser() {
   return (
     <div className='container-dados-user'>
 
-        Meus dados
+        <div className="user">
+          
+        </div>
       
     </div>
   )
